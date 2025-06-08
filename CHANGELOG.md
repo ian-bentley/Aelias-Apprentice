@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [v0.0.5] 2025-06-08
+
+- Adds Hitbox.cs to Hitbox object
+- Hitbox detects collisions with hurtboxes
+
+
 ## [v0.0.4] 2025-06-08
 
 - Moves projectile spawn to Update based on if the space key is pressed
