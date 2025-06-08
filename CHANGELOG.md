@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [v0.0.4] 2025-06-08
+
+- Moves projectile spawn to Update based on if the space key is pressed
+
+
 ## [v0.0.3] 2025-06-08
 
 - Moves projectile spawn to Update based on if the space key is pressed
