@@ -4,8 +4,8 @@
 
 - [X] Basic Player object
 - [X] Basic Projectile object that moves
-- [ ] Have player create the projectile
-- [ ] Input for shooting projectile
+- [X] Have player create the projectile
+- [X] Input for shooting projectile
 - [ ] Basic Enemy object with hitbox
 - [ ] Hitbox and hurtbox layer + interaction settings
 - [ ] Add hurtbox to projectile that detects hits on hitboxes

@@ -1,6 +1,11 @@
 # CHANGELOG
 
-## [v0.0.2]
+## [v0.0.3] 2025-06-08
+
+- Moves projectile spawn to Update based on if the space key is pressed
+
+
+## [v0.0.2] 2025-06-08
 
 - Adds a Projectile game object prefab
 - Adds Projectile.cs
