@@ -30,7 +30,7 @@ public class Hitbox : MonoBehaviour
             // Send out hitboxHit event with the collision source
             hitboxHit?.Invoke(collision);
 
-            Debug.Log("Hitbox has hit something");
+            Debug.Log(gameObject + ": I have hit something");
         }
     }
 

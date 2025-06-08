@@ -6,7 +6,8 @@ public class Player : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        if (projectilePrefab == null)
+            Debug.LogError(gameObject + " needs to have a projectile prefab");
     }
 
     // Update is called once per frame

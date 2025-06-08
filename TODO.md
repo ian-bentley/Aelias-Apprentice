@@ -9,8 +9,8 @@
 - [X] Basic Enemy object with hurtbox
 - [X] Hitbox and hurtbox layer + interaction settings
 - [X] Add hitbox to projectile that detects hits on hitboxes
-- [ ] Projectile can detect its hurtbox has hit
-- [ ] Player movement
+- [X] Projectile can detect its hurtbox has hit
+- [X] Player movement
 - [ ] Projectile tells enemy it is hit
 - [ ] Spell shapes. New IHitResponder and Area. Swap out projecile for Area
 - [ ] Spell choice based on button pressed

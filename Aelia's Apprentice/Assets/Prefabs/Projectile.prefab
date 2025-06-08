@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7929826367790182115}
   - component: {fileID: 8615419062148957726}
-  - component: {fileID: 241704874709927949}
+  - component: {fileID: 9769937253766483}
   m_Layer: 6
   m_Name: Hitbox
   m_TagString: Untagged
@@ -69,7 +69,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0.2}
   m_Radius: 0.2
---- !u!114 &241704874709927949
+--- !u!114 &9769937253766483
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 5792709123642449370}
   - component: {fileID: 367706997177117394}
   - component: {fileID: 1924725652942966985}
-  - component: {fileID: 8515842581304787416}
+  - component: {fileID: 5970171324697890654}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Untagged
@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc4bc7601a28a774488e49a019f1f21b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!50 &8515842581304787416
+--- !u!50 &5970171324697890654
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0

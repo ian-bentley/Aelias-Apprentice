@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [v0.0.6] 2025-06-08
+
+- Adds PlayerController
+- PlayerController gets movement input and moves the player
+
+
 ## [v0.0.5] 2025-06-08
 
 - Adds Hitbox.cs to Hitbox object
