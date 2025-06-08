@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [v0.0.7] 2025-06-08
+
+- Adds Enemy.cs
+- Projectile calls TakeDamage in Enemy.cs on hit
+
 ## [v0.0.6] 2025-06-08
 
 - Adds PlayerController

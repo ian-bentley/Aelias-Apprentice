@@ -50,5 +50,8 @@ public class Projectile : MonoBehaviour
         HasHit = true;
 
         Debug.Log(gameObject + ": My hitbox has hit something");
+
+        Enemy enemy = hitboxCollider.gameObject.GetComponentInParent<Enemy>();
+        enemy.TakeDamage();
     }
 }

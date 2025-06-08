@@ -11,7 +11,7 @@
 - [X] Add hitbox to projectile that detects hits on hitboxes
 - [X] Projectile can detect its hurtbox has hit
 - [X] Player movement
-- [ ] Projectile tells enemy it is hit
+- [X] Projectile tells enemy it is hit
 - [ ] Spell shapes. New IHitResponder and Area. Swap out projecile for Area
 - [ ] Spell choice based on button pressed
 - [ ] Hit responders can be set to apply damage. Set only projectile to do so
