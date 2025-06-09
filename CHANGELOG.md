@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [v0.0.9] 2025-06-08
+
+- Player detects if pressing 1 for projectile and 2 for area
+
+
 ## [v0.0.8] 2025-06-08
 
 - Adds the Area prefab

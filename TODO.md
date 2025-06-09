@@ -13,7 +13,7 @@
 - [X] Player movement
 - [X] Projectile tells enemy it is hit
 - [X] Spell shapes. New IHitResponder and Area. Swap out projecile for Area
-- [ ] Spell choice based on button pressed
+- [X] Spell choice based on button pressed
 - [ ] Hit responders can be set to apply damage. Set only projectile to do so
 - [ ] Enemies can be set to receive damage
 - [ ] Basic Object object hitbox but no damage
@@ -26,3 +26,7 @@
 ## Bug Fixes
 
 ## Refactors
+
+- [ ] Editor warnings and tips for required components
+- [ ] PlayerController to separate concerns of player input vs action
+- [ ] Effect System: EffectReceiver and IEffect

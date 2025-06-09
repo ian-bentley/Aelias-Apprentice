@@ -313,7 +313,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c45684d3a340d904cb1810256ff331ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spellPrefab: {fileID: 9044319696036352848, guid: 127e9d9c515cb9a4096039750292d8f2, type: 3}
+  spellPrefab1: {fileID: 3746695746961852449, guid: d0d50eec97a57d941a005c8846856b87, type: 3}
+  spellPrefab2: {fileID: 9044319696036352848, guid: 127e9d9c515cb9a4096039750292d8f2, type: 3}
 --- !u!114 &610208740
 MonoBehaviour:
   m_ObjectHideFlags: 0
