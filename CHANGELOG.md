@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [v0.0.10] 2025-06-08
+
+- Spells can now be set to deal damage
+- Enemies can receive damage
+
+
 ## [v0.0.9] 2025-06-08
 
 - Player detects if pressing 1 for projectile and 2 for area

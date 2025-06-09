@@ -8,6 +8,9 @@ public class HitResponder : MonoBehaviour
     // Tracks whether the projectile has already hit something
     private bool HasHit { get; set; } = false;
 
+    // Determines if a hitresponder damages
+    [SerializeField] private bool doesDamage = false;
+
     protected virtual void Start()
     {
         Hitbox = GetComponentInChildren<Hitbox>();
@@ -27,7 +30,14 @@ public class HitResponder : MonoBehaviour
 
         Debug.Log(gameObject + ": My hitbox has hit something");
 
+        // Gets the enemy component of the object hit
         Enemy enemy = hitboxCollider.gameObject.GetComponentInParent<Enemy>();
-        enemy.TakeDamage();
+
+        // Tells the enemy to take a hit
+        enemy.TakeHit();
+
+        // If this hit responder is set to do damage, tell the enemy to take damage
+        if (doesDamage)
+            enemy.TakeDamage();
     }
 }

@@ -14,8 +14,8 @@
 - [X] Projectile tells enemy it is hit
 - [X] Spell shapes. New IHitResponder and Area. Swap out projecile for Area
 - [X] Spell choice based on button pressed
-- [ ] Hit responders can be set to apply damage. Set only projectile to do so
-- [ ] Enemies can be set to receive damage
+- [X] Hit responders can be set to apply damage. Set only projectile to do so
+- [X] Enemies can be set to receive damage
 - [ ] Basic Object object hitbox but no damage
 - [ ] Basic damageable object using IDamageable. Has Enemy use IDamageable
 - [ ] Interactable objects, interaction input, and interaction targetting
