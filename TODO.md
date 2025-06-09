@@ -16,14 +16,50 @@
 - [X] Spell choice based on button pressed
 - [X] Hit responders can be set to apply damage. Set only projectile to do so
 - [X] Enemies can be set to receive damage
-- [ ] Basic Object object hitbox but no damage
-- [ ] Basic damageable object using IDamageable. Has Enemy use IDamageable
+- [X] Basic Object object hitbox but no damage
+- [X] Basic damageable object using IDamageable. Has Enemy use IDamageable
 - [ ] Interactable objects, interaction input, and interaction targetting
 - [ ] Spell effects: damage, freeze, push, and pull. Assign to four casting buttons
 - [ ] Spell queue. Spells are made by reading the queue.
 - ...
 
+
+## Features
+
+### Entities
+- [X] Player
+- [X] Enemy
+- [ ] Boss
+- [X] Object
+- [X] BreakableObject
+- [ ] InteractableObject
+- [ ] Keys
+- [ ] Doors
+
+### Spells
+- [X] Damage spell
+- [ ] Freeze spell
+- [ ] Push spell
+- [ ] Grow spell
+
+### Systems
+- [ ] Spell queue
+- [ ] Spell modification
+- [ ] Enemy combat AI
+- [ ] Boss fights
+- [ ] Effect system
+- [ ] Level system (navigation, resets)
+- [ ] Player death
+
+### Puzzles
+- [ ] Push puzzles
+- [ ] Damage puzzles
+- [ ] Freeze puzzles
+- [ ] Size puzzles
+
+
 ## Bug Fixes
+
 
 ## Refactors
 

@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [v0.0.11] 2025-06-08
+
+- Adds Object and BreakableObject prefeb
+- Abstracts taking damage into IDamagable
+- Modifies HitResponder to check if target is damageable before applying damage
+
+
 ## [v0.0.10] 2025-06-08
 
 - Spells can now be set to deal damage

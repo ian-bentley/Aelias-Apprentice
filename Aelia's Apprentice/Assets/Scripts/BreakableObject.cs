@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Enemy : MonoBehaviour, IDamageable
+public class BreakableObject : MonoBehaviour, IDamageable
 {
     public void TakeDamage()
     {
