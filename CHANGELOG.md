@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## [v0.0.8] 2025-06-08
+
+- Adds the Area prefab
+- Abstracts hit responding of the projectile to HitResponder
+- Adds Area.cs which is a HitResponder
+- Sets Player spell to be Area
+
+
 ## [v0.0.7] 2025-06-08
 
 - Adds Enemy.cs
