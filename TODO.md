@@ -18,7 +18,7 @@
 - [X] Enemies can be set to receive damage
 - [X] Basic Object object hitbox but no damage
 - [X] Basic damageable object using IDamageable. Has Enemy use IDamageable
-- [ ] Interactable objects, interaction input, and interaction targetting
+- [X] Interactable objects, interaction input, and interaction targetting
 - [ ] Spell effects: damage, freeze, push, and pull. Assign to four casting buttons
 - [ ] Spell queue. Spells are made by reading the queue.
 - ...
@@ -32,7 +32,7 @@
 - [ ] Boss
 - [X] Object
 - [X] BreakableObject
-- [ ] InteractableObject
+- [X] InteractableObject
 - [ ] Keys
 - [ ] Doors
 
@@ -66,3 +66,4 @@
 - [ ] Editor warnings and tips for required components
 - [ ] PlayerController to separate concerns of player input vs action
 - [ ] Effect System: EffectReceiver and IEffect
+- [ ] Spell pooling

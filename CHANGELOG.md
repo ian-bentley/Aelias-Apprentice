@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [v0.0.12] 2025-06-09
+
+- Player has an Interactor which can detect interaction collisions with interactable objects
+- Adds option to press E to interact
+- Adds InteractableObject prefab
+
+
 ## [v0.0.11] 2025-06-08
 
 - Adds Object and BreakableObject prefeb

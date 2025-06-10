@@ -5,6 +5,8 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject spellPrefab1;
     [SerializeField] private GameObject spellPrefab2;
 
+    private GameObject InteractorBox { get; set; }
+
     void Start()
     {
         if (spellPrefab1 == null)
