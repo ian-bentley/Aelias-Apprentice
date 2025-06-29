@@ -20,7 +20,7 @@
 - [X] Basic damageable object using IDamageable. Has Enemy use IDamageable
 - [X] Interactable objects, interaction input, and interaction targetting
 - [X] Object collision
-- [ ] Spell effects: damage, freeze, push, and pull. Assign to four casting buttons
+- [X] Spell effects: damage, freeze, push, and pull. Assign to four casting buttons
 - [ ] Spell queue. Spells are made by reading the queue.
 - ...
 
@@ -39,9 +39,9 @@
 
 ### Spells
 - [X] Damage spell
-- [ ] Freeze spell
-- [ ] Push spell
-- [ ] Grow spell
+- [X] Freeze spell
+- [X] Push spell
+- [X] Grow spell
 
 ### Systems
 - [ ] Spell queue

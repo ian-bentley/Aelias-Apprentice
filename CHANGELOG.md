@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [v0.0.14] 2025-06-28
+
+- Player has two new spells: Push and Size
+
+
 ## [v0.0.13] 2025-06-28
 
 - Player, objects, and enemies now respect collision

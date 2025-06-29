@@ -5,6 +5,7 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject spellPrefab1;
     [SerializeField] private GameObject spellPrefab2;
     [SerializeField] private GameObject spellPrefab3;
+    [SerializeField] private GameObject spellPrefab4;
 
     private GameObject InteractorBox { get; set; }
 
@@ -18,6 +19,9 @@ public class Player : MonoBehaviour
 
         if (spellPrefab3 == null)
             Debug.LogError(gameObject + " needs to have a spell prefab 3");
+
+        if (spellPrefab4 == null)
+            Debug.LogError(gameObject + " needs to have a spell prefab 4");
     }
 
     void Update()
@@ -44,9 +48,23 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             Vector2 spawnPos = transform.position;
-            Quaternion rotation = Quaternion.identity;
+            Vector2 direction = Vector2.up;
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            Quaternion rotation = Quaternion.Euler(0, 0, angle);
 
-            GameObject raycastObj = Instantiate(spellPrefab3, spawnPos, rotation);
+            GameObject projectileObj = Instantiate(spellPrefab3, spawnPos, rotation);
+            projectileObj.GetComponent<Projectile>().Direction = direction;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            Vector2 spawnPos = transform.position;
+            Vector2 direction = Vector2.up;
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            Quaternion rotation = Quaternion.Euler(0, 0, angle);
+
+            GameObject projectileObj = Instantiate(spellPrefab4, spawnPos, rotation);
+            projectileObj.GetComponent<Projectile>().Direction = direction;
         }
     }
 }
