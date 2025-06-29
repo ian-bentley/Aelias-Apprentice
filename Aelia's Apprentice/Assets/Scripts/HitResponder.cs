@@ -31,7 +31,7 @@ public class HitResponder : MonoBehaviour
 
     protected void HandleHit(Collider2D hitboxCollider)
     {
-        Debug.Log(gameObject + ": I have hit something");
+        //Debug.Log(gameObject + ": I have hit something");
 
         // If this can damage, attempt to damage the target
         if (damages)

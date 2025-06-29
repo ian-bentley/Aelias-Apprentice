@@ -33,7 +33,7 @@ public class Interactor : MonoBehaviour
         {
             // Start tracking the interaction hurtbox source
             InteractableInRange = collision;
-            Debug.Log("I have entered an interaction hurtbox");
+            //Debug.Log("I have entered an interaction hurtbox");
         }
     }
 
@@ -44,7 +44,7 @@ public class Interactor : MonoBehaviour
         {
             // Stop tracking the interaction hurtbox source
             InteractableInRange = null;
-            Debug.Log("I have exited an interaction hurtbox");
+            //Debug.Log("I have exited an interaction hurtbox");
         }
     }
 }

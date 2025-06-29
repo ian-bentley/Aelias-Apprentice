@@ -22,6 +22,23 @@
 - [X] Object collision
 - [X] Spell effects: damage, freeze, push, and pull. Assign to four casting buttons
 - [ ] Spell queue. Spells are made by reading the queue.
+- [ ] Key object that's a trigger to inform player it touched one
+- [ ] Doors are an interactable object that need their key to interact
+- [ ] Basic enemy movement
+- [ ] Basic enemy attack
+- [ ] Basic player death
+- [ ] Spell aiming
+- [ ] Push, damage, freeze, and size puzzle
+- [ ] A boss that can have phases
+- [ ] Modify spells
+- [ ] Basic level with a reset
+- [ ] A boss room
+- [ ] Effect system and states. Actually make the spells work
+- [ ] Basic sound effect system: Walking, spells, queueing, enemy noises, object sounds
+- [ ] Basic sprites
+- [ ] Animation system based on state
+- [ ] Screens: Title screen, lose screen, and win screen
+- [ ] UI: Spells and hearts
 - ...
 
 
