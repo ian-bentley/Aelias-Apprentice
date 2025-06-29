@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [v0.0.13] 2025-06-28
+
+- Player, objects, and enemies now respect collision
+- Adds collider and rigid body settings to player, object, and enemy
+
+
 ## [v0.0.12] 2025-06-09
 
 - Player has an Interactor which can detect interaction collisions with interactable objects

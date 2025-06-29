@@ -19,6 +19,7 @@
 - [X] Basic Object object hitbox but no damage
 - [X] Basic damageable object using IDamageable. Has Enemy use IDamageable
 - [X] Interactable objects, interaction input, and interaction targetting
+- [X] Object collision
 - [ ] Spell effects: damage, freeze, push, and pull. Assign to four casting buttons
 - [ ] Spell queue. Spells are made by reading the queue.
 - ...

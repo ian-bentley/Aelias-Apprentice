@@ -4,6 +4,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private GameObject spellPrefab1;
     [SerializeField] private GameObject spellPrefab2;
+    [SerializeField] private GameObject spellPrefab3;
 
     private GameObject InteractorBox { get; set; }
 
@@ -14,6 +15,9 @@ public class Player : MonoBehaviour
 
         if (spellPrefab2 == null)
             Debug.LogError(gameObject + " needs to have a spell prefab 2");
+
+        if (spellPrefab3 == null)
+            Debug.LogError(gameObject + " needs to have a spell prefab 3");
     }
 
     void Update()
@@ -35,6 +39,14 @@ public class Player : MonoBehaviour
             Quaternion rotation = Quaternion.identity;
 
             GameObject areaObj = Instantiate(spellPrefab2, spawnPos, rotation);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            Vector2 spawnPos = transform.position;
+            Quaternion rotation = Quaternion.identity;
+
+            GameObject raycastObj = Instantiate(spellPrefab3, spawnPos, rotation);
         }
     }
 }
