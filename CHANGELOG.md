@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [v0.0.16] 2025-06-29
+
+- Player can now collect a key
+- New Key object prefab
+
+
 ## [v0.0.15] 2025-06-29
 
 - Adds SpellQueue data structure
