@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IDamageable
 {
     [SerializeField] private GameObject spellPrefab1;
     [SerializeField] private GameObject spellPrefab2;
@@ -11,6 +11,20 @@ public class Player : MonoBehaviour
     public bool HasKey { get; set; }
 
     private GameObject InteractorBox { get; set; }
+
+    // Player singleton
+    public static Player Instance { get; private set; }
+
+    // Enforce singleton
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+    }
 
     void Start()
     {
@@ -70,7 +84,12 @@ public class Player : MonoBehaviour
 
             GameObject projectileObj = Instantiate(spellPrefab1, spawnPos, rotation);
             projectileObj.GetComponent<Projectile>().Direction = direction;
-            
+
+            // Assign the source
+            Hitbox hitbox = projectileObj.GetComponentInChildren<Hitbox>();
+            if (hitbox != null)
+                hitbox.Source = this.gameObject;
+
             // Exit early since spell has been cast
             return;
         }
@@ -82,6 +101,11 @@ public class Player : MonoBehaviour
             Quaternion rotation = Quaternion.identity;
 
             GameObject areaObj = Instantiate(spellPrefab2, spawnPos, rotation);
+
+            // Assign the source
+            Hitbox hitbox = areaObj.GetComponentInChildren<Hitbox>();
+            if (hitbox != null)
+                hitbox.Source = this.gameObject;
 
             // Exit early since spell has been cast
             return;
@@ -98,6 +122,11 @@ public class Player : MonoBehaviour
             GameObject projectileObj = Instantiate(spellPrefab3, spawnPos, rotation);
             projectileObj.GetComponent<Projectile>().Direction = direction;
 
+            // Assign the source
+            Hitbox hitbox = projectileObj.GetComponentInChildren<Hitbox>();
+            if (hitbox != null)
+                hitbox.Source = this.gameObject;
+
             // Exit early since spell has been cast
             return;
         }
@@ -113,8 +142,18 @@ public class Player : MonoBehaviour
             GameObject projectileObj = Instantiate(spellPrefab4, spawnPos, rotation);
             projectileObj.GetComponent<Projectile>().Direction = direction;
 
+            // Assign the source
+            Hitbox hitbox = projectileObj.GetComponentInChildren<Hitbox>();
+            if (hitbox != null)
+                hitbox.Source = this.gameObject;
+
             // Exit early since spell has been cast
             return;
         }
+    }
+
+    public void TakeDamage()
+    {
+        Debug.Log(gameObject + ": I have been damaged");
     }
 }

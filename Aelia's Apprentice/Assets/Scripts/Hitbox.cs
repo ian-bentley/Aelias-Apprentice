@@ -12,8 +12,14 @@ public class Hitbox : MonoBehaviour
     // Tracks GameObjects hit during this frame to prevent multiple triggers
     private HashSet<GameObject> hitThisFrame = new HashSet<GameObject>();
 
+    // Source of the created hitbox to avoid self-hits
+    public GameObject Source { get; set; }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // Exit early if collision is the source
+        if (collision.transform.root.gameObject == Source) return;
+
         // Exit early if we've already hit this object this frame
         if (hitThisFrame.Contains(collision.gameObject)) return;
 

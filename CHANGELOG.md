@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## [v0.0.18] 2025-06-29
+
+- Updates Enemy with player targeting, movement, attack cooldown, and attacking
+- Gives player the ability to take hits
+- Updates hitbox to ignore source to prevent self-hits
+- New timer object for tracking times
+
+
 ## [v0.0.17] 2025-06-29
 
 - Adds Door prefab that's in Interactable

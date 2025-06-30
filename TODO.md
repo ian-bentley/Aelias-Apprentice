@@ -24,8 +24,8 @@
 - [X] Spell queue. Spells are made by reading the queue.
 - [X] Key object that's a trigger to inform player it touched one
 - [X] Doors are an interactable object that need their key to interact
-- [ ] Basic enemy movement
-- [ ] Basic enemy attack
+- [X] Basic enemy movement
+- [X] Basic enemy attack
 - [ ] Basic player death
 - [ ] Spell aiming
 - [ ] Push, damage, freeze, and size puzzle
@@ -63,7 +63,7 @@
 ### Systems
 - [X] Spell queue
 - [ ] Spell modification
-- [ ] Enemy combat AI
+- [X] Enemy combat AI
 - [ ] Boss fights
 - [ ] Effect system
 - [ ] Level system (navigation, resets)

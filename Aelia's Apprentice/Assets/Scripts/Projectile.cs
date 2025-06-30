@@ -21,7 +21,7 @@ public class Projectile : HitResponder
         if (Rb == null)
             Debug.LogError(gameObject + " needs a RigidBody2D component");
 
-        Direction = Vector2.up;
+        // Set the movement speed of the projectile
         Speed = 5f;
     }
 
