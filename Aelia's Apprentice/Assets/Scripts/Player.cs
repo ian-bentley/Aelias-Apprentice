@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject spellPrefab4;
 
     SpellQueue spellQueue;
+    public bool HasKey { get; set; }
 
     private GameObject InteractorBox { get; set; }
 

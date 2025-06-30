@@ -15,8 +15,8 @@ TagManager:
   - Hurtbox
   - InteractionHitbox
   - InteractionHurtbox
-  - 
-  - 
+  - Key
+  - Player
   - 
   - 
   - 
