@@ -21,7 +21,7 @@
 - [X] Interactable objects, interaction input, and interaction targetting
 - [X] Object collision
 - [X] Spell effects: damage, freeze, push, and pull. Assign to four casting buttons
-- [ ] Spell queue. Spells are made by reading the queue.
+- [X] Spell queue. Spells are made by reading the queue.
 - [ ] Key object that's a trigger to inform player it touched one
 - [ ] Doors are an interactable object that need their key to interact
 - [ ] Basic enemy movement
@@ -61,7 +61,7 @@
 - [X] Grow spell
 
 ### Systems
-- [ ] Spell queue
+- [X] Spell queue
 - [ ] Spell modification
 - [ ] Enemy combat AI
 - [ ] Boss fights

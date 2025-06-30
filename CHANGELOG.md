@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [v0.0.15] 2025-06-29
+
+- Adds SpellQueue data structure
+- Player controls now use 1, 2, 3, 4 for spell queue and SPACE to cast the spell
+
+
 ## [v0.0.14] 2025-06-28
 
 - Player has two new spells: Push and Size
