@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## [v0.0.19] 2025-06-30
+
+- Player casting spell now references mouse position for direction of projectiles
+
+
 ## [v0.0.18] 2025-06-29
 
 - Updates Enemy with player targeting, movement, attack cooldown, and attacking

@@ -78,7 +78,7 @@ public class Player : MonoBehaviour, IDamageable
         if (spellQueue.Contains(SpellWord.Fire) && !spellQueue.Contains(SpellWord.Reverse))
         {
             Vector2 spawnPos = transform.position;
-            Vector2 direction = Vector2.up;
+            Vector2 direction = GetMouseDirection();
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             Quaternion rotation = Quaternion.Euler(0, 0, angle);
 
@@ -115,7 +115,7 @@ public class Player : MonoBehaviour, IDamageable
         if (spellQueue.Contains(SpellWord.Push))
         {
             Vector2 spawnPos = transform.position;
-            Vector2 direction = Vector2.up;
+            Vector2 direction = GetMouseDirection();
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             Quaternion rotation = Quaternion.Euler(0, 0, angle);
 
@@ -135,7 +135,7 @@ public class Player : MonoBehaviour, IDamageable
         if (spellQueue.Contains(SpellWord.Size))
         {
             Vector2 spawnPos = transform.position;
-            Vector2 direction = Vector2.up;
+            Vector2 direction = GetMouseDirection();
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             Quaternion rotation = Quaternion.Euler(0, 0, angle);
 
@@ -150,6 +150,18 @@ public class Player : MonoBehaviour, IDamageable
             // Exit early since spell has been cast
             return;
         }
+    }
+
+    Vector2 GetMouseDirection()
+    {
+        // Get the mouse position in world space (converted to 2D Vector2)
+        Vector2 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        // Get the player's position
+        Vector2 playerPos = transform.position;
+
+        // Return the normalized direction from player to mouse
+        return (mouseWorldPos - playerPos).normalized;
     }
 
     public void TakeDamage()

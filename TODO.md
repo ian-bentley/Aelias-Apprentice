@@ -26,12 +26,12 @@
 - [X] Doors are an interactable object that need their key to interact
 - [X] Basic enemy movement
 - [X] Basic enemy attack
-- [ ] Basic player death
-- [ ] Spell aiming
-- [ ] Push, damage, freeze, and size puzzle
-- [ ] A boss that can have phases
+- [X] Spell aiming
 - [ ] Modify spells
+- [ ] Basic player death
+- [ ] Push, damage, freeze, and size puzzle
 - [ ] Basic level with a reset
+- [ ] A boss that can have phases
 - [ ] A boss room
 - [ ] Effect system and states. Actually make the spells work
 - [ ] Basic sound effect system: Walking, spells, queueing, enemy noises, object sounds
