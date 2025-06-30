@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [v0.0.17] 2025-06-29
+
+- Adds Door prefab that's in Interactable
+- Door will open if player has collected key
+- Key will be removed once used
+
+
 ## [v0.0.16] 2025-06-29
 
 - Player can now collect a key

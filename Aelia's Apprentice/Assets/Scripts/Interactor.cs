@@ -19,7 +19,7 @@ public class Interactor : MonoBehaviour
             // Find the collider's interactable component and trigger its OnInteract if it exists
             IInteractable interactable = InteractableInRange.GetComponentInParent<IInteractable>();
             if (interactable != null)
-                interactable.OnInteract();
+                interactable.OnInteract(this);
             else
                 Debug.LogError(InteractableInRange.gameObject + " needs to have an IInteractable component");
         }

@@ -795,7 +795,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8232314781658373555, guid: a501549f8d841754c9d89f3a596a8e8c, type: 3}
       propertyPath: m_Name
-      value: InteractableObject
+      value: Door
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

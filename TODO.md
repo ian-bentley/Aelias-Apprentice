@@ -23,7 +23,7 @@
 - [X] Spell effects: damage, freeze, push, and pull. Assign to four casting buttons
 - [X] Spell queue. Spells are made by reading the queue.
 - [X] Key object that's a trigger to inform player it touched one
-- [ ] Doors are an interactable object that need their key to interact
+- [X] Doors are an interactable object that need their key to interact
 - [ ] Basic enemy movement
 - [ ] Basic enemy attack
 - [ ] Basic player death
@@ -52,7 +52,7 @@
 - [X] BreakableObject
 - [X] InteractableObject
 - [X] Keys
-- [ ] Doors
+- [X] Doors
 
 ### Spells
 - [X] Damage spell
