@@ -12,12 +12,27 @@ public class ProjectileCaster : SpellCaster
 
     GameObject Source => Player.Instance.gameObject;
 
-    public ProjectileCaster(GameObject spellPrefab) : base(spellPrefab){ }
+    readonly float _speedMult;
+    readonly float _sizeMult;
+
+    public ProjectileCaster(GameObject spellPrefab, float speedMult, float sizeMult) : base(spellPrefab)
+    { 
+        _speedMult = speedMult;
+        _sizeMult = sizeMult;
+    }
 
     public override void CastSpell()
     {
+        // Instantiate projectile game object
         GameObject projectileObj = GameObject.Instantiate(SpellPrefab, SpawnPos, Rotation);
-        projectileObj.GetComponent<Projectile>().Direction = Direction;
+
+        // Set reference to projectile object
+        Projectile projectile = projectileObj.GetComponent<Projectile>();
+        
+        // Set projectile direction, speed, and size
+        projectile.Direction = Direction;
+        projectile.SpeedMult = _speedMult;
+        projectileObj.transform.localScale *= _sizeMult;
 
         // Assign the source
         Hitbox hitbox = projectileObj.GetComponentInChildren<Hitbox>();

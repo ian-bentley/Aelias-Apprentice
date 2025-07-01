@@ -27,10 +27,10 @@
 - [X] Basic enemy movement
 - [X] Basic enemy attack
 - [X] Spell aiming
-- [ ] Modify spells
-- [ ] Basic player death
+- [X] Modify spells
 - [ ] Push, damage, freeze, and size puzzle
 - [ ] Basic level with a reset
+- [ ] Player death
 - [ ] A boss that can have phases
 - [ ] A boss room
 - [ ] Effect system and states. Actually make the spells work
@@ -62,7 +62,7 @@
 
 ### Systems
 - [X] Spell queue
-- [ ] Spell modification
+- [X] Spell modification
 - [X] Enemy combat AI
 - [ ] Boss fights
 - [ ] Effect system

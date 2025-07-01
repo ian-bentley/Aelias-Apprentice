@@ -8,8 +8,16 @@ public class Projectile : HitResponder
     // Direction the projectile moves in
     public Vector2 Direction { get; set; }
 
-    // Speed of the projectile in units per second
-    private float Speed { get; set; }
+    // Base speed of the projectile in units per second
+    private float BaseSpeed { get; set; } = 5f;
+
+    // Speed mult of the projectile
+    public float SpeedMult { get; set; } = 1f;
+
+    // Speed of the projectile based on base x mult
+    private float Speed => BaseSpeed * SpeedMult;
+
+    public float SizeMult { get; set; } = 1f;
 
     protected override void Start()
     {
@@ -20,9 +28,6 @@ public class Projectile : HitResponder
 
         if (Rb == null)
             Debug.LogError(gameObject + " needs a RigidBody2D component");
-
-        // Set the movement speed of the projectile
-        Speed = 5f;
     }
 
     // Update is called once per frame

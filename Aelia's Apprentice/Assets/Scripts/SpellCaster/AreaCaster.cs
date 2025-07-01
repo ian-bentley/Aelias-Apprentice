@@ -9,11 +9,19 @@ public class AreaCaster : SpellCaster
 
     GameObject Source => Player.Instance.gameObject;
 
-    public AreaCaster(GameObject spellPrefab) : base(spellPrefab){ }
+    readonly float _sizeMult;
+
+    public AreaCaster(GameObject spellPrefab, float sizeMult) : base(spellPrefab)
+    { 
+        _sizeMult = sizeMult;
+    }
 
     public override void CastSpell()
     {
         GameObject areaObj = GameObject.Instantiate(SpellPrefab, SpawnPos, Rotation);
+
+
+        areaObj.transform.localScale *= _sizeMult;
 
         // Assign the source
         Hitbox hitbox = areaObj.GetComponentInChildren<Hitbox>();

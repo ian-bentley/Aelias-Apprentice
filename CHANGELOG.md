@@ -1,6 +1,13 @@
 # CHANGELOG
 
-## [v0.0.19] 2025-06-30
+## [v0.0.20] 2025-06-30
+
+- Spell data changes based on queue
+- Spell builder interprets queue to set modifiers such as size and speed
+- Separates concerns for casting spells: SpellRegistry for data, SpellCaster for casting logic, and SpellCasterBuilder for deciding which spell based on spell queue
+
+
+## [v0.0.19] 2025-06-29
 
 - Player casting spell now references mouse position for direction of projectiles
 
